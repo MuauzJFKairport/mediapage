@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media App</h1>
+    <nav>
+      <button id="homeBtn">Home</button>
+      <button id="loginBtn">Login/Chat</button>
+    </nav>
+  </header>
+ 
+  <main id="content">
+    <section id="home-page">
+      <h2>Welcome to the Social Media App</h2>
+      <div id="users"></div>
+      <div id="comments"></div>
+    </section>
+
+
+    <section id="login-page" style="display: none;">
+      <h2>Login/Chat Page</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <label for="message">Message:</label>
+        <input type="text" id="message" placeholder="Type your message" required>
+        <button type="submit">Type</button>
+      </form>
+      <div id="chat-box"></div>
+    </section>
+  </main>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
